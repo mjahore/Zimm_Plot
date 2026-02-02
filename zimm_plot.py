@@ -1,4 +1,17 @@
 #!/opt/conda/bin/python3
+#
+# Zimm Plot - Example of analyzing light scattering data to compute
+#             weight-average molar mass, root mean-squared radius of
+#             gyration, and z-average 2nd virial coefficient.
+#
+# Author: Michael J. A. Hore <hore@case.edu>
+#         Department of Macromolecular Science and Engineering
+#         Case Western Reserve University
+#
+# Date: 02-Feb-2026
+#
+#######################################################################
+ 
 import sys
 import math
 import numpy as np
