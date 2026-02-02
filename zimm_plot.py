@@ -202,6 +202,9 @@ ax.set_ylabel(r'$Kc/R_{\theta}$ (mol/g)')
 ax.set_xlabel(r'$q^{2} + ' + str(shift_factor) + r'\times c$ (nm$^{-2}$)')
 
 # Display everything.
+results = r'$M_{w}:$ ' + str(math.trunc(Mw)) + " g/mol\n" + r' $R_{g}$: ' + str(math.trunc(Rg*100)/100) + r' $\mathrm{nm}$' +"\n" + r'$A_{2}$: ' + str(math.trunc(1000000*A2)/1000000) + r' $\mathrm{cm^{3} mol/g^{2}}$' + "\n"
+ax.text(0.98, 0.02, results, transform=ax.transAxes, ha='right', va='bottom')
+
 plt.legend()
 plt.show()
 
